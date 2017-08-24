@@ -5,12 +5,6 @@
     <title>Домашнее задание к лекции 2.1</title>
     <meta charset="UTF-8">
     <style type="text/css">
-    .caption {
-    caption-side: bottom;
-    text-align: right;
-    padding: 10px 0; 
-    font-size: 14px;
-    }   
     table {
     border-collapse: collapse; 
     border: 1px solid grey; 
