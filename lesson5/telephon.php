@@ -5,6 +5,17 @@
     <title>Домашнее задание к лекции 2.1</title>
     <meta charset="UTF-8">
     <style type="text/css">
+    .caption {
+    caption-side: bottom;
+    text-align: right;
+    padding: 10px 0; 
+    font-size: 14px;
+    }   
+    table {
+    border-collapse: collapse; 
+    border: 1px solid grey; 
+    }  
+    th, td {border: 1px solid grey;} 
    .table_head { 
     font-size: 140%; 
     color: Blue;
@@ -25,22 +36,23 @@ $data = json_decode($str, true);
 ?>
 
 <table>
+   <caption><h1>Записная книжка.</h1></caption>    
     <tr class=table_head>
-        <td>First Name</td>
-        <td>Last Name</td>
-        <td>Address</td>
-        <td>Phone Number</td>
-        <td>E-mail</td>
-        <td>Gender</td>
+        <th>First Name</th>
+        <th>Last Name</th>
+        <th>Address</th>
+        <th>Phone Number</th>
+        <th>E-mail</th>
+        <th>Gender</th>
     </tr>
     <?php foreach ($data as $item) { ?>
  <tr class=table_item>
-    <td><?php echo $item['firstName']; ?></td>
-    <td><?php echo $item['lastName']; ?></td>
-    <td><?php echo $item['address']; ?></td>
-    <td><?php echo $item['phoneNumber']; ?></td>
-    <td><?php echo $item['e-mail']; ?></td>
-    <td><?php echo $item['gender']; ?></td>
+    <th><?php echo $item['firstName']; ?></th>
+    <th><?php echo $item['lastName']; ?></th>
+    <th><?php echo $item['address']; ?></th>
+    <th><?php echo $item['phoneNumber']; ?></th>
+    <th><?php echo $item['e-mail']; ?></th>
+    <th><?php echo $item['gender']; ?></th>
 </tr>
     <?php } ?>
 </table>
